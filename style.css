@@ -1,0 +1,142 @@
+body{
+    background-image: url(/img/pexels-zaksheuskaya-1616403.jpg);
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    margin: 0;
+}
+
+.titulo{
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+}
+
+
+main{
+    height: 80%;
+    font-family: "Inconsolata", monospace;
+}
+
+.boxes{
+    padding: 45px;
+    list-style: none;
+    width: 90%;
+    position: relative;
+    margin: 20px auto;
+    display: flex;
+}
+
+.boxes li{
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+textarea{
+    width: 85%;
+    height: 300px;
+    resize: none;
+    padding: 10px;
+    border-left: 8px solid #489a8f;
+    border-top: 8px solid #489a8f;
+    border-right: 5px solid #489a8f;
+    border-bottom: 5px solid #489a8f;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.btnizq, .btnder{
+        width: 93%;
+        position: relative; 
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        margin-top: 20px;
+        
+        
+
+}
+
+.btnizq button, .copiar{
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Inconsolata", monospace;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-size: 120% auto;
+    background-image: linear-gradient(315deg, #6e4bd6 0%, #dc74ee 75%);
+}
+
+.btnizq button:hover, .copiar:hover{
+    transform: scale(1.2);
+    background-position: right center;
+}
+
+
+.encriptar{
+    margin-right: 50px; 
+}
+
+.copiar{
+    text-align: center;
+}
+
+
+footer{
+    height: 5%;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+
+}
+
+
+
+@media screen and (max-width:480px) {
+    body{
+        background-image: url(/img/pexels-zaksheuskaya-1616403.jpg);
+        margin: 0;
+    }
+      
+    header, h1, main, .boxes, .boxes li, textarea, .btnizq, .btnder, .btnizq button, .copiar,  .btnizq button:hover, .copiar:hover, .btnizq button:active, .copiar:active, .encriptar, footer{
+    
+        width: auto;
+        text-align: center;
+
+    }
+
+    .titulo{
+        text-align: center;
+    }
+
+    .boxes{
+
+        justify-content: center;
+        display: block;
+
+    }
+
+    .boxes li{
+        padding: 10px;
+    }
+
+
+}

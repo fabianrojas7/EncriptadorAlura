@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <script src="app.js"></script>
+
+    <header>
+        <div class="titulo">
+            <h1>Encriptador de texto</h1> 
+        </div>
+        
+    </header>
+
+    <main class="contenedor">
+
+        <ul class="boxes">
+            <li class="boxizq">
+                <textarea name="textoEncriptado" id="textoEncriptado" class="textoEncriptado" cols="30" rows="10" placeholder="Ingresa el texto. No se permiten mayúsculas ni caracteres especiales."></textarea>
+                <div class="btnizq">
+                    <button type="button" id="encriptar" class="encriptar" onclick="encriptar()">Encriptar</button>
+                    <button type="button" id="desencriptar" class="dsencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </li>
+            <li class="boxder">
+                <textarea name="mensajeDesencriptado" id="mensajeDesencriptado" cols="30" rows="10" placeholder="Tu texto encriptado se mostrará aquí"></textarea>
+                <div class="btnder">
+                    <button type="button" id="copiar" class="copiar" onclick="copiar()">Copiar</button>
+                </div>
+            </li>
+        </ul>
+
+    </main>
+
+    <footer>
+        <p class="pie">© Fabián Rojas - 2024</p>
+    </footer>
+
+</body>
+</html>
